@@ -13,4 +13,8 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compileOnly 'org.projectlombok:lombok:1.18.10'
+    // Lombok
+    annotationProcessor platform(group: 'org.springframework.boot', name: 'spring-boot-dependencies', version: '2.1.4.RELEASE')
+    annotationProcessor group: 'org.projectlombok', name: 'lombok'
 }
